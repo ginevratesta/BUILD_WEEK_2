@@ -1,283 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./details.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./navbar_style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <img src="./assets/logo-pink.png" class="logo-cont" alt="" />
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div id="search-bar">
-            <button>Ovunque</button>
-            <span></span>
-            <button>Qualunque settimana</button>
-            <span></span>
-            <button>Aggiungi ospiti</button>
-            <button id="search-button">
-              <ion-icon name="search"></ion-icon>
-            </button>
-          </div>
-          <div id="user-cont">
-            <button>Affitta con Airbnb</button>
-            <button>
-              <ion-icon name="globe-outline"></ion-icon>
-            </button>
-          </div>
-          <div id="drop-menu" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <ion-icon name="menu-outline"></ion-icon>
-              <ion-icon name="person-circle"></ion-icon>
-            </button>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#">
-                  Le novità della Winter Release
-                  <button
-                    style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./details.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./navbar_style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img src="./assets/logo-pink.png" class="logo-cont" alt="" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div id="search-bar">
+          <button>Ovunque</button>
+          <span></span>
+          <button>Qualunque settimana</button>
+          <span></span>
+          <button>Aggiungi ospiti</button>
+          <button id="search-button">
+            <ion-icon name="search"></ion-icon>
+          </button>
+        </div>
+        <div id="user-cont">
+          <button>Affitta con Airbnb</button>
+          <button>
+            <ion-icon name="globe-outline"></ion-icon>
+          </button>
+        </div>
+        <div id="drop-menu" class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <ion-icon name="menu-outline"></ion-icon>
+            <ion-icon name="person-circle"></ion-icon>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">
+                Le novità della Winter Release
+                <button style="
                       background-color: #ff385c;
                       border-radius: 5px;
                       color: white;
-                    "
-                  >
-                    novità
-                  </button>
-                </a>
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Registrati</a></li>
-              <li><a class="dropdown-item" href="#">Accedi</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Gift Card</a></li>
-              <li><a class="dropdown-item" href="#">Affitta con Airbnb</a></li>
-              <li><a class="dropdown-item" href="#">Centro Assistenza</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- </div> -->
-    </nav>
-
-    <div class="container" id="container-img"></div>
-
-    <div class="container" id="host"></div>
-
-    <div class="container" id="recensioni">
-      <div class="testata">
-        <div>img</div>
-        <div>paragrafo</div>
-        <div>
-          <div>valutazione</div>
-          <div>descrizione</div>
+                    ">
+                  novità
+                </button>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li><a class="dropdown-item" href="#">Registrati</a></li>
+            <li><a class="dropdown-item" href="#">Accedi</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li><a class="dropdown-item" href="#">Gift Card</a></li>
+            <li><a class="dropdown-item" href="#">Affitta con Airbnb</a></li>
+            <li><a class="dropdown-item" href="#">Centro Assistenza</a></li>
+          </ul>
         </div>
       </div>
     </div>
+    <!-- </div> -->
+  </nav>
 
-    <div class="container" id="mappa"></div>
+  <div class="container" id="container-img"></div>
 
-    <footer>
-      <main class="px-5">
-        <div class="over-footer pt-5">
-          <h4 class="ps-4">Ispirazione per viaggi futuri</h4>
-          <div id="nav-footer" class="pt-3 mx-4"></div>
+  <main class="main-host ms-5">
+    <div class="contenitore-host d-flex align-items-center justify-content-between" id="host">
+      <div>
+        <h4>Minicase-Host:Luca</h4>
+        <p>2 ospiti1 . 1 camera da letto . 1 letto . 1 bagno</p>
+      </div>
+      <div class="host-img">
+        <img src="https://a0.muscache.com/im/pictures/user/d45b1f48-4507-4e66-afe7-20396cd82533.jpg?im_w=240" alt="" />
+      </div>
+    </div>
+    <div class="info-host">
+      <div class="d-flex gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+          focusable="false" style="
+              display: block;
+              height: 24px;
+              width: 24px;
+              fill: currentcolor;
+            ">
+          <path
+            d="M24.33 1.67a2 2 0 0 1 2 1.85v24.81h3v2H2.67v-2h3V3.67a2 2 0 0 1 1.85-2h.15zm-4 2H7.67v24.66h12.66zm4 0h-2v24.66h2zm-7 11a1.33 1.33 0 1 1 0 2.66 1.33 1.33 0 0 1 0-2.66z">
+          </path>
+        </svg>
+        <div>
+          <h5>Self check-in</h5>
+          <p>Esegui autonomamente il check-in con l'opzione Smart Lock.</p>
         </div>
-
-        <div class="row ps-4 mt-4 pb-3">
-          <div class="col-6 col-sm-6 col-md-3 col-lg-2 pb-3">
-            <p class="fw-bold mb-0">Acireale</p>
-            <span class="gray">Soggiorni in case</span>
-          </div>
-          <div class="col-6 col-sm-6 col-md-3 col-lg-2 pb-3">
-            <p class="fw-bold mb-0">Amsterdam</p>
-            <span class="gray">Soggiorni in ville</span>
-          </div>
-          <div class="col-6 col-sm-6 col-md-3 col-lg-2 pb-3">
-            <p class="fw-bold mb-0">Arezzo</p>
-            <span class="gray">Soggiorni in case</span>
-          </div>
-          <div class="col-6 col-sm-6 col-md-3 col-lg-2 pb-3">
-            <p class="fw-bold mb-0">Assisi</p>
-            <span class="gray">Case vacanze</span>
-          </div>
-          <div class="col-6 col-sm-6 d-sm-block d-md-none d-lg-block col-lg-2">
-            <p class="fw-bold mb-0">Barcelona</p>
-            <span class="gray">Case vacanze</span>
-          </div>
-          <div class="col-6 col-sm-6 d-sm-block d-md-none d-lg-block col-lg-2">
-            <p class="fw-bold mb-0">Bologna</p>
-            <span class="gray">Case vacanze</span>
-          </div>
+      </div>
+      <div class="d-flex gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+          focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+          <path
+            d="M16 17a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM25.67.33a2 2 0 0 1 2 1.85v6.54a2 2 0 0 1-.97 1.7l-.14.08-9.67 4.84a2 2 0 0 1-1.61.07l-.17-.07-9.67-4.84a2 2 0 0 1-1.1-1.62V2.33a2 2 0 0 1 1.84-2h.15zm0 2H6.33v6.39L16 13.55l9.67-4.83z">
+          </path>
+        </svg>
+        <div>
+          <h5>Luca è un Superhost</h5>
+          <p>I Superhost sono host con esperienza e valutazioni molto alte.</p>
         </div>
-
-        <div class="row ps-4 pb-3">
-          <div class="col-6 col-sm-6 col-md-3 col-lg-2 pb-3">
-            <p class="fw-bold mb-0">Catania</p>
-            <span class="gray">Soggiorni in chalet</span>
-          </div>
-          <div
-            id="showMore"
-            class="col-6 col-sm-6 d-md-block col-md-3 col-lg-2 pb-3"
-          ></div>
-          <div class="d-none d-md-block col-md-3 col-lg-2 pb-3">
-            <p class="fw-bold mb-0">Florence</p>
-            <span class="gray">Soggiorni in appartamenti</span>
-          </div>
-          <div class="d-none d-md-block col-md-3 col-lg-2 pb-3">
-            <p class="fw-bold mb-0">Giulianova</p>
-            <span class="gray">Case vacanze</span>
-          </div>
-          <div class="d-none d-lg-block col-lg-2 pb-3">
-            <p class="fw-bold mb-0">Livorno</p>
-            <span class="gray">Soggiorni in case</span>
-          </div>
-          <div class="d-none d-lg-block col-lg-2 pb-3">
-            <p class="fw-bold mb-0">London</p>
-            <span class="gray">Case vacanze</span>
-          </div>
+      </div>
+      <div class="d-flex gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+          focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+          <path
+            d="M16.84 27.16v-3.4l-.26.09c-.98.32-2.03.51-3.11.55h-.7A11.34 11.34 0 0 1 1.72 13.36v-.59A11.34 11.34 0 0 1 12.77 1.72h.59c6.03.16 10.89 5.02 11.04 11.05V13.45a11.3 11.3 0 0 1-.9 4.04l-.13.3 7.91 7.9v5.6H25.7l-4.13-4.13zM10.31 7.22a3.1 3.1 0 1 1 0 6.19 3.1 3.1 0 0 1 0-6.2zm0 2.06a1.03 1.03 0 1 0 0 2.06 1.03 1.03 0 0 0 0-2.06zM22.43 25.1l4.12 4.13h2.67v-2.67l-8.37-8.37.37-.68.16-.3c.56-1.15.9-2.42.96-3.77v-.64a9.28 9.28 0 0 0-9-9h-.55a9.28 9.28 0 0 0-9 9v.54a9.28 9.28 0 0 0 13.3 8.1l.3-.16 1.52-.8v4.62z">
+          </path>
+        </svg>
+        <div>
+          <h5>Ottima esperienza di check-in</h5>
+          <p>Il 100% degli ospiti ha valutato con 5 stelle la procedura di check-in.</p>
         </div>
+      </div>
+    </div>
+  </main>
 
-        <div class="row ps-4 pb-3">
-          <div class="d-none d-md-block col-md-3 col-lg-2 pb-3">
-            <p class="fw-bold mb-0">Los Angeles</p>
-            <span class="gray">Soggiorni in case</span>
-          </div>
-          <div class="d-none d-md-block col-md-3 col-lg-2 pb-3">
-            <p class="fw-bold mb-0">Madonna di Campiglio</p>
-            <span class="gray">Soggiorni in case</span>
-          </div>
-          <div class="d-none d-md-block col-md-3 col-lg-2 pb-3">
-            <p class="fw-bold mb-0">Marcelli</p>
-            <span class="gray">Soggiorni in appartamenti</span>
-          </div>
-          <div class="d-none d-lg-block col-lg-2 pb-3">
-            <p class="fw-bold mb-0">Marotta</p>
-            <span class="gray">Case vacanze</span>
-          </div>
-          <div class="d-none d-lg-block col-lg-2 pb-3">
-            <p class="fw-bold mb-0">Marsala</p>
-            <span class="gray">Soggiorni in case</span>
-          </div>
-          <div class="d-none d-md-block col-md-3 col-lg-2 pb-3">
-            <p class="fw-bold mb-0">
-              Mostra altro <ion-icon name="chevron-down-outline"></ion-icon>
-            </p>
-          </div>
-        </div>
-      </main>
+  <div class="container" id="recensioni">
+    <div class="testata">
+      <div>img</div>
+      <div>paragrafo</div>
+      <div>
+        <div>valutazione</div>
+        <div>descrizione</div>
+      </div>
+    </div>
+  </div>
 
-      <div class="border-top">
-        <main class="px-5">
-          <div class="row ps-4 pb-5">
-            <div class="col-lg-4 pt-5">
-              <p class="fw-bold">Assistenza</p>
-              <p>Centro Assistenza</p>
-              <p>AirCover</p>
-              <p>Antidiscriminazione</p>
-              <p>Supporto alla disabilità</p>
-              <p>Opzioni di cancellazione</p>
-              <p>Segnala problema nel quartiere</p>
-            </div>
-            <div class="col-lg-4 pt-5 md-border">
-              <p class="fw-bold">Ospitare</p>
-              <p>Apri un Airbnb</p>
-              <p>AirCover per gli host</p>
-              <p>Risorse per gli host</p>
-              <p>Forum della community</p>
-              <p>Ospitare responsabilmente</p>
-            </div>
-            <div class="col-lg-4 pt-5 md-border">
-              <p class="fw-bold">Marsala</p>
-              <p>Newsroom</p>
-              <p>Nuove funzionalità</p>
-              <p>Opportunità di lavoro</p>
-              <p>Investitori</p>
-              <p>Gift card</p>
-              <p>Soggiorni con Airbnb.org</p>
-            </div>
-          </div>
-        </main>
+  <div class="container" id="mappa"></div>
+
+  <footer>
+    <main class="px-5">
+      <div class="over-footer pt-5">
+        <h4 class="ps-4">Ispirazione per viaggi futuri</h4>
+        <div id="nav-footer" class="pt-3 mx-4"></div>
       </div>
 
-      <main class="px-5">
-        <div id="footer-end" class="border-top pt-3 mx-4">
-          <div
-            class="d-flex justify-content-lg-between flex-wrap-reverse justify-content-md-center"
-          >
-            <div class="d-flex align-items-center gap-2 pb-3 flex-wrap">
-              <div class="d-flex align-items-center gap-2">
-                <span>© 2023 Airbnb, Inc.</span>
-                <span class="mb-2 d-none d-lg-block">.</span>
-              </div>
-              <div class="d-flex align-items-center gap-2">
-                <span>Privacy</span>
-                <span class="mb-2">.</span>
-                <span>Termini</span>
-                <span class="mb-2">.</span>
-                <span>Mappa del sito</span>
-                <span class="mb-2">.</span>
-                <span>Dettagli dell'azienda</span>
-              </div>
-            </div>
+      <div class="row ps-4 mt-4 pb-3">
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 pb-3">
+          <p class="fw-bold mb-0">Acireale</p>
+          <span class="gray">Soggiorni in case</span>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 pb-3">
+          <p class="fw-bold mb-0">Amsterdam</p>
+          <span class="gray">Soggiorni in ville</span>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 pb-3">
+          <p class="fw-bold mb-0">Arezzo</p>
+          <span class="gray">Soggiorni in case</span>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 pb-3">
+          <p class="fw-bold mb-0">Assisi</p>
+          <span class="gray">Case vacanze</span>
+        </div>
+        <div class="col-6 col-sm-6 d-sm-block d-md-none d-lg-block col-lg-2">
+          <p class="fw-bold mb-0">Barcelona</p>
+          <span class="gray">Case vacanze</span>
+        </div>
+        <div class="col-6 col-sm-6 d-sm-block d-md-none d-lg-block col-lg-2">
+          <p class="fw-bold mb-0">Bologna</p>
+          <span class="gray">Case vacanze</span>
+        </div>
+      </div>
 
-            <div class="d-flex align-items-center gap-4 pb-3">
-              <div class="d-flex align-items-center gap-2">
-                <ion-icon name="globe-outline"></ion-icon>
-                <span>taliano (IT)</span>
-              </div>
-              <div>
-                <span class="d-flex align-items-center gap-2"> € EUR </span>
-              </div>
-              <div class="d-flex align-items-center d-none d-md-block">
-                <ion-icon class="pe-2" name="logo-facebook"></ion-icon>
-                <ion-icon class="pe-2" name="logo-twitter"></ion-icon>
-                <ion-icon name="logo-instagram"></ion-icon>
-              </div>
-            </div>
+      <div class="row ps-4 pb-3">
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 pb-3">
+          <p class="fw-bold mb-0">Catania</p>
+          <span class="gray">Soggiorni in chalet</span>
+        </div>
+        <div id="showMore" class="col-6 col-sm-6 d-md-block col-md-3 col-lg-2 pb-3"></div>
+        <div class="d-none d-md-block col-md-3 col-lg-2 pb-3">
+          <p class="fw-bold mb-0">Florence</p>
+          <span class="gray">Soggiorni in appartamenti</span>
+        </div>
+        <div class="d-none d-md-block col-md-3 col-lg-2 pb-3">
+          <p class="fw-bold mb-0">Giulianova</p>
+          <span class="gray">Case vacanze</span>
+        </div>
+        <div class="d-none d-lg-block col-lg-2 pb-3">
+          <p class="fw-bold mb-0">Livorno</p>
+          <span class="gray">Soggiorni in case</span>
+        </div>
+        <div class="d-none d-lg-block col-lg-2 pb-3">
+          <p class="fw-bold mb-0">London</p>
+          <span class="gray">Case vacanze</span>
+        </div>
+      </div>
+
+      <div class="row ps-4 pb-3">
+        <div class="d-none d-md-block col-md-3 col-lg-2 pb-3">
+          <p class="fw-bold mb-0">Los Angeles</p>
+          <span class="gray">Soggiorni in case</span>
+        </div>
+        <div class="d-none d-md-block col-md-3 col-lg-2 pb-3">
+          <p class="fw-bold mb-0">Madonna di Campiglio</p>
+          <span class="gray">Soggiorni in case</span>
+        </div>
+        <div class="d-none d-md-block col-md-3 col-lg-2 pb-3">
+          <p class="fw-bold mb-0">Marcelli</p>
+          <span class="gray">Soggiorni in appartamenti</span>
+        </div>
+        <div class="d-none d-lg-block col-lg-2 pb-3">
+          <p class="fw-bold mb-0">Marotta</p>
+          <span class="gray">Case vacanze</span>
+        </div>
+        <div class="d-none d-lg-block col-lg-2 pb-3">
+          <p class="fw-bold mb-0">Marsala</p>
+          <span class="gray">Soggiorni in case</span>
+        </div>
+        <div class="d-none d-md-block col-md-3 col-lg-2 pb-3">
+          <p class="fw-bold mb-0">
+            Mostra altro <ion-icon name="chevron-down-outline"></ion-icon>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div class="border-top">
+      <main class="px-5">
+        <div class="row ps-4 pb-5">
+          <div class="col-lg-4 pt-5">
+            <p class="fw-bold">Assistenza</p>
+            <p>Centro Assistenza</p>
+            <p>AirCover</p>
+            <p>Antidiscriminazione</p>
+            <p>Supporto alla disabilità</p>
+            <p>Opzioni di cancellazione</p>
+            <p>Segnala problema nel quartiere</p>
+          </div>
+          <div class="col-lg-4 pt-5 md-border">
+            <p class="fw-bold">Ospitare</p>
+            <p>Apri un Airbnb</p>
+            <p>AirCover per gli host</p>
+            <p>Risorse per gli host</p>
+            <p>Forum della community</p>
+            <p>Ospitare responsabilmente</p>
+          </div>
+          <div class="col-lg-4 pt-5 md-border">
+            <p class="fw-bold">Marsala</p>
+            <p>Newsroom</p>
+            <p>Nuove funzionalità</p>
+            <p>Opportunità di lavoro</p>
+            <p>Investitori</p>
+            <p>Gift card</p>
+            <p>Soggiorni con Airbnb.org</p>
           </div>
         </div>
       </main>
-    </footer>
+    </div>
 
-    <script src="./details.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <main class="px-5">
+      <div id="footer-end" class="border-top pt-3 mx-4">
+        <div class="d-flex justify-content-lg-between flex-wrap-reverse justify-content-md-center">
+          <div class="d-flex align-items-center gap-2 pb-3 flex-wrap">
+            <div class="d-flex align-items-center gap-2">
+              <span>© 2023 Airbnb, Inc.</span>
+              <span class="mb-2 d-none d-lg-block">.</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <span>Privacy</span>
+              <span class="mb-2">.</span>
+              <span>Termini</span>
+              <span class="mb-2">.</span>
+              <span>Mappa del sito</span>
+              <span class="mb-2">.</span>
+              <span>Dettagli dell'azienda</span>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center gap-4 pb-3">
+            <div class="d-flex align-items-center gap-2">
+              <ion-icon name="globe-outline"></ion-icon>
+              <span>taliano (IT)</span>
+            </div>
+            <div>
+              <span class="d-flex align-items-center gap-2"> € EUR </span>
+            </div>
+            <div class="d-flex align-items-center d-none d-md-block">
+              <ion-icon class="pe-2" name="logo-facebook"></ion-icon>
+              <ion-icon class="pe-2" name="logo-twitter"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </footer>
+
+  <script src="./details.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
