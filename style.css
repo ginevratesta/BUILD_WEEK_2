@@ -31,24 +31,28 @@ footer {
   }
 }
 
+#carouselExample{
+  width: 90%;
+}
+
 .carta-img{
   width: 55px;
   height: 55px;
 }
 
-.carta {
+.carta-img {
   opacity: 0.5;
 }
-.carta p {
+.carta-img p {
   white-space: nowrap;
-  font-size: 15px;
+  font-size: 12px;
   padding-bottom: 10px;
 }
-.carta:hover {
+.carta-img:hover {
   opacity: 1;
   cursor: pointer;
 }
-.carta:hover p {
+.carta-img:hover p {
   border-bottom: 2px rgb(198, 196, 196) solid;
 }
 #primaCard {
