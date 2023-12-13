@@ -1220,25 +1220,6 @@ const destinazioni = [
 
 const containerCard = document.querySelector("#cards");
 
-{
-  /* <div class="carousel-inner">
-  <div class="carousel-item active">
-    <img src="${destinazioni[i].picture_urls[j]}" class="d-block w-100" alt="..." />
-  </div>
-  <div class="carousel-item">
-    <img src="${destinazioni[i].picture_urls[j]}" class="d-block w-100" alt="..." />
-  </div>
-  <div class="carousel-item">
-    <img src="${destinazioni[i].picture_urls[j]}" class="d-block w-100" alt="..." />
-  </div>
-  <div class="carousel-item">
-    <img src="${destinazioni[i].picture_urls[j]}" class="d-block w-100" alt="..." />
-  </div>
-  <div class="carousel-item">
-    <img src="${destinazioni[i].picture_urls[j]}" class="d-block w-100" alt="..." />
-  </div>
-</div>; */
-}
 
 for (let i = 0; i < destinazioni.length; i++) {
   containerCard.innerHTML += `
