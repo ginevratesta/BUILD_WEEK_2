@@ -46,7 +46,7 @@ footer {
 .carta-img p {
   white-space: nowrap;
   font-size: 12px;
-  padding-bottom: 10px;
+  padding-block: 10px;
 }
 .carta-img:hover {
   opacity: 1;
@@ -64,6 +64,7 @@ footer {
 
 .filtri p {
   margin-bottom: 0;
+  font-size: 15px;
 }
 .filtri {
   background-color: white;
