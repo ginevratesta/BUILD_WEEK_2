@@ -1,9 +1,130 @@
 .jumbotron {
-  height: 20vh;
+  height: 18vh;
   background-image: url(assets/pics-carousel-nav/home.jpg);
   background-size: cover;
   background-position: center;
   object-fit: cover;
-  aspect-ratio: 3/1;
+  aspect-ratio: 2/1;
   background-repeat: no-repeat;
+}
+
+#navbar img{
+  margin-right: 25%;
+}
+
+.navbar-toggler{
+  border-color: white;
+}
+
+.logo-cont {
+  height: 45px;
+}
+
+#search-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  border: solid 1px lightgray;
+  border-radius: 37px;
+  overflow: hidden;
+  padding: 4px;
+  background-color: white;
+  box-shadow: 0px 2px 3px 0px lightgray;
+  transition: 0.2s;
+}
+
+#search-bar button {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background-color: white;
+  pointer-events: fill;
+  font-weight: 600;
+}
+
+#search-button {
+  padding-top: 4px;
+  color: white;
+}
+
+#search-bar ion-icon {
+  background-color: #ff385c;
+  padding: 9px;
+  border-radius: 18px;
+}
+
+#search-bar span {
+  width: 1px;
+  height: 25px;
+  background-color: #ddd;
+  margin-inline: 7px;
+}
+
+#search-bar:hover {
+  box-shadow: 0px 4px 3px 0px lightgray;
+}
+
+#search-bar button:nth-of-type(3) {
+  color: gray;
+  font-weight: lighter;
+}
+
+#user-cont button:nth-of-type(1) {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background-color: white;
+  pointer-events: fill;
+  font-weight:600;
+}
+
+#user-cont button:nth-of-type(2) {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background-color: white;
+  pointer-events: fill;
+  font-weight:600;
+}
+
+
+#drop-menu ion-icon {
+  color: grey;
+}
+
+#drop-menu #user-btn {
+background-color: white;
+border: 1px solid lightgray;
+border-radius: 30px;
+}
+
+#user-cont button:nth-of-type(3) {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background-color: white;
+  pointer-events: fill;
+  font-weight:600;
+}
+
+#user-cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+}
+
+
+.jumbotron h1{
+  margin-top: 15%;
+}
+
+.card img{
+  object-fit: cover;
 }
