@@ -15,9 +15,10 @@
     <title>Document</title>
   </head>
   <body>
-    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <img src="./assets/logo-pink.png" class="logo-cont" alt="" />
+    <nav id="navbar" class="navbar navbar-expand-lg py-3 px-5">
+        <img src="./assets/logo-pink.png" class="logo-cont" alt="Site logo"/>
+
+
         <button
           class="navbar-toggler"
           type="button"
@@ -29,6 +30,8 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div id="search-bar">
             <button>Ovunque</button>
@@ -40,15 +43,16 @@
               <ion-icon name="search"></ion-icon>
             </button>
           </div>
-          <div id="user-cont">
-            <button>Affitta con Airbnb</button>
-            <button>
-              <ion-icon name="globe-outline"></ion-icon>
-            </button>
-          </div>
-          <div id="drop-menu" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
+
+        </div>
+        <div id="user-cont" class="d-none d-lg-block d-lg-flex gap-3">
+          <button>Affitta con Airbnb</button>
+          <button>
+            <ion-icon class="pt-2" name="globe-outline"></ion-icon>
+          </button>
+          <div id="drop-menu">
+            <button id="user-btn"
+            class="d-flex justify-content-center align-items-center p-2"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -81,9 +85,15 @@
             </ul>
           </div>
         </div>
-      </div>
-      <!-- </div> -->
+      
     </nav>
+
+
+
+
+
+
+
 
     <div class="container" id="container-img"></div>
 

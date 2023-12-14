@@ -1,5 +1,9 @@
 #navbar {
-  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+
+#navbar img{
+  margin-right: 25%;
 }
 
 .logo-cont {
@@ -63,7 +67,7 @@
   text-decoration: none;
   border: none;
   outline: none;
-  background-color: #F8F9FA;
+  background-color: white;
   pointer-events: fill;
   font-weight:600;
 }
@@ -72,19 +76,20 @@
   text-decoration: none;
   border: none;
   outline: none;
-  background-color: #F8F9FA;
+  background-color: white;
   pointer-events: fill;
   font-weight:600;
 }
 
-#drop-menu button {
-background-color: white;
-border: 1px solid lightgray;
-border-radius: 30px;
-}
 
 #drop-menu ion-icon {
   color: grey;
+}
+
+#drop-menu #user-btn {
+background-color: white;
+border: 1px solid lightgray;
+border-radius: 30px;
 }
 
 #user-cont button:nth-of-type(3) {

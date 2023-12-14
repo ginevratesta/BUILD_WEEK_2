@@ -24,78 +24,78 @@
   <body>
     <div class="p-5 mb-4 text-white jumbotron h-100">
       <div class="container-fluid py-5">
-        <nav id="navbar" class="navbar navbar-expand-lg b">
-          <div class="container-fluid">
-            <img src="./assets/logo-pink.png" class="logo-cont" alt="" />
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
+        <nav id="navbar" class="navbar navbar-expand-lg py-3 px-5">
+          <img src="./assets/logo-pink.png" class="logo-cont" alt="Site logo"/>
+  
+  
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div id="search-bar">
+              <button>Ovunque</button>
+              <span></span>
+              <button>Qualunque settimana</button>
+              <span></span>
+              <button>Aggiungi ospiti</button>
+              <button id="search-button">
+                <ion-icon name="search"></ion-icon>
+              </button>
+            </div>
+  
+          </div>
+          <div id="user-cont" class="d-none d-lg-block d-lg-flex gap-3">
+            <button>Affitta con Airbnb</button>
+            <button>
+              <ion-icon class="pt-2" name="globe-outline"></ion-icon>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div id="search-bar">
-                <button>Ovunque</button>
-                <span></span>
-                <button>Qualunque settimana</button>
-                <span></span>
-                <button>Aggiungi ospiti</button>
-                <button id="search-button">
-                  <ion-icon name="search"></ion-icon>
-                </button>
-              </div>
-              <div id="user-cont">
-                <button>Affitta con Airbnb</button>
-                <button>
-                  <ion-icon name="globe-outline"></ion-icon>
-                </button>
-              </div>
-              <div id="drop-menu" class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <ion-icon name="menu-outline"></ion-icon>
-                  <ion-icon name="person-circle"></ion-icon>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Le novità della Winter Release
-                      <button
-                        style="
-                          background-color: #ff385c;
-                          border-radius: 5px;
-                          color: white;
-                        "
-                      >
-                        novità
-                      </button>
-                    </a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Registrati</a></li>
-                  <li><a class="dropdown-item" href="#">Accedi</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Gift Card</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Affitta con Airbnb</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Centro Assistenza</a>
-                  </li>
-                </ul>
-              </div>
+            <div id="drop-menu">
+              <button id="user-btn"
+              class="d-flex justify-content-center align-items-center p-2"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <ion-icon name="menu-outline"></ion-icon>
+                <ion-icon name="person-circle"></ion-icon>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Le novità della Winter Release
+                    <button
+                      style="
+                        background-color: #ff385c;
+                        border-radius: 5px;
+                        color: white;
+                      "
+                    >
+                      novità
+                    </button>
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Registrati</a></li>
+                <li><a class="dropdown-item" href="#">Accedi</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Gift Card</a></li>
+                <li><a class="dropdown-item" href="#">Affitta con Airbnb</a></li>
+                <li><a class="dropdown-item" href="#">Centro Assistenza</a></li>
+              </ul>
             </div>
           </div>
-        </nav>
+        
+      </nav>
         <h1 class="display-5 fw-bold">Custom jumbotron</h1>
         <p class="col-md-8 fs-4">
           Using a series of utilities, you can create this jumbotron, just like
