@@ -5,8 +5,12 @@
 
 #container-img img {
   object-fit: cover;
+  aspect-ratio: 1/1;
+  transition: 0.5s ease;
 }
-
+#container-img img:hover {
+  opacity: 0.7;
+}
 .host-img img {
   width: 50px;
   aspect-ratio: 1/1;
@@ -54,7 +58,7 @@
   padding-block: 10px;
 }
 
-.map-iframe{
+.map-iframe {
   margin-inline: 10%;
   aspect-ratio: 2/1;
 }
