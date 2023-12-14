@@ -1,0 +1,13 @@
+.main-host {
+  width: 30%;
+}
+.host-img img {
+  width: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.contenitore-host,
+.info-host {
+  border-bottom: 1px gray solid;
+  padding-top: 10px;
+}
