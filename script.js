@@ -1219,14 +1219,13 @@ const destinazioni = [
 ];
 
 const containerCard = document.querySelector("#cards");
-let idAssociatedToCard = [];
+
 
 for (let i = 0; i < destinazioni.length; i++) {
   containerCard.innerHTML += `
   <div class="row mb-5">
-
   <div class="img-card-dimension m-5 col-lg-12">
-        <div id="carouselExampleIndicators${i}" class="carousel slide overflow-hidden rounded-4">
+        <div id="carouselExampleIndicators${i}" class="carousel slide overflow-hidden rounded-5">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators${i}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators${i}" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -1236,15 +1235,15 @@ for (let i = 0; i < destinazioni.length; i++) {
           </div>
           <div class="carousel-inner"></div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators${i}" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon-cata" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators${i}" data-bs-slide="next">
-            <span class="carousel-control-next-icon-cata" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <div class="card-body" onclick="cercaClick('${destinazioni[i].id}')">
+        <div class="card-body">
           <div class="d-flex justify-content-between col-lg-12">
             <h6 class="card-title col-lg-9">${destinazioni[i].name}</h6>
             <h6 class="col-lg-3 d-flex justify-content-end gap-2 align-items-center">
@@ -1318,7 +1317,3 @@ function checkWindowWidth() {
 window.addEventListener("resize", checkWindowWidth);
 
 checkWindowWidth();
-
-function cercaClick(id) {
-  window.open("details.html?indice=" + id);
-}
