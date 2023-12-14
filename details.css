@@ -1,9 +1,9 @@
-.main-row{
+.main-row {
   border-radius: 15px;
   overflow: hidden;
 }
 
-#container-img img{
+#container-img img {
   object-fit: cover;
 }
 
@@ -19,50 +19,45 @@
   padding-top: 10px;
 }
 
-.prenotation{
+.prenotation {
   border: 1px solid lightgray;
   border-radius: 10px;
 }
 
-.check-in{
+.check-in {
   border: 1px solid lightgray;
   border-radius: 10px;
 }
 
-.border-b{
+.border-b {
   border-bottom: 1px solid lightgray;
 }
 
-.border-r{
+.border-r {
   border-right: 1px solid lightgray;
 }
 
-.btn-pre{
-  background-color: #ED3B5A;
+.btn-pre {
+  background-color: #ed3b5a;
   border-radius: 10px;
 }
 
-.border-t{
+.border-t {
   border-top: 1px solid lightgray;
 }
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 990px){
-  .main-row{
+.btn-servizi {
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: white;
+  padding-inline: 15px;
+  padding-block: 10px;
+}
+@media screen and (max-width: 990px) {
+  .main-row {
     border-radius: 15px;
   }
 
-  .main-cols{
+  .main-cols {
     padding-right: 0;
   }
-
 }
