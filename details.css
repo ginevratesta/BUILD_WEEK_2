@@ -1,3 +1,27 @@
+.main-row{
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#container-img img{
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main-host {
   width: 30%;
 }
@@ -6,8 +30,20 @@
   aspect-ratio: 1/1;
   border-radius: 50%;
 }
+
 .contenitore-host,
 .info-host {
   border-bottom: 1px gray solid;
   padding-top: 10px;
+}
+
+@media screen and (max-width: 990px){
+  .main-row{
+    border-radius: 15px;
+  }
+
+  .main-cols{
+    padding-right: 0;
+  }
+
 }
