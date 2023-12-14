@@ -92,6 +92,35 @@
         </div>
       </div>
     </nav>
+
+  <div class="px-5 pb-5 mx-5" id="container-img">
+    <div class="d-flex justify-content-between align-items-center py-3">
+<h3 id="titolo-location" >Questo è il titolo</h3>
+
+<div class="d-flex justify-content-center align-items-center">
+  <ion-icon class="pe-1" name="share-outline"></ion-icon><span class="pe-3"><u>Condividi</u></span>
+  <ion-icon class="pe-1" name="heart-outline"></ion-icon><span><u>Salva</u></span>
+</div>
+    </div>
+<div class="row main-row">
+  <div class="main-cols ps-0 col-12 col-lg-6">
+    <img id="pic-1" class="h-100 w-100" src="./assets/edinburgh.jpeg" alt="">
+  </div>
+  <div class="main-cols pe-0 col-lg-6 ">
+    <div class="row d-none d-lg-block d-lg-flex gy-3">
+      <div class="col-lg-6">
+        <img id="pic-2" class="h-100 w-100" src="./assets/edinburgh.jpeg" alt="">
+      </div>
+      <div class="col-lg-6">
+        <img id="pic-3" class="h-100 w-100" src="./assets/edinburgh.jpeg" alt="">
+      </div>
+      <div class="col-lg-6">
+        <img id="pic-4" class="h-100 w-100" src="./assets/edinburgh.jpeg" alt="">
+      </div>
+      <div class="col-lg-6">
+        <img id="pic-5" class="h-100 w-100" src="./assets/edinburgh.jpeg" alt="">
+      </div>
+    </nav>
     <!-- div contenitore immagini gestito con JS -->
     <div class="container">
       <div class="px-5 pb-5 mx-5" id="container-img"></div>
@@ -197,13 +226,236 @@
       </div>
     </main>
 
-    <!-- <div class="container" id="recensioni">
-    <div class="testata">
-      <div>img</div>
-      <div>paragrafo</div>
-      <div>
-        <div>valutazione</div>
-        <div>descrizione</div>
+
+      <div class="d-none d-lg-block col-lg-4">
+        <div class="prenotation py-3 px-4">
+          <span class="fs-3 fw-bold">55 €</span><span> notte</span>
+          <div class="check-in my-3">
+            <div class="d-flex justify-content-between border-b px-3">
+              <div class="w-50 py-3 border-r">
+                <p class="fw-bold fs-6 my-0">CHECK-IN</p><span>14/12/2023</span>
+              </div>
+              <div class="w-50 py-3 ps-3">
+                <p class="fw-bold fs-6 my-0">CHECK-OUT</p><span>19/12/2023</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center p-3">
+              <div>
+                <p class="fw-bold fs-6 my-0">OSPITI</p><span>1 ospite</span>
+              </div>
+              <ion-icon class="fs-3" name="chevron-down-outline"></ion-icon>
+            </div>
+
+          </div>
+
+          <div class="btn-pre d-flex justify-content-center py-3"><span class="text-white fs-4">Prenota</span></div>
+          <p class=" pt-3 text-center">Non riceverai alcun addebito in questa fase</p>
+
+          <div class="d-flex justify-content-between pb-3">
+            <span><u>55 € x 5 notti</u></span><span>273 €</span>
+          </div>
+          <div class="d-flex justify-content-between pb-4">
+            <span><u>Costi di pulizia</u></span><span>35 €</span>
+          </div>
+          <div class="d-flex justify-content-between border-t pt-3">
+            <strong>Totale</strong><strong>308 €</strong>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+
+    <div class="row justify-content-center gap-5 px-5 w-100">
+      <div class="col-lg-5 p-3">
+        <div class="user-img d-flex align-items-center gap-2 pb-3">
+          <ion-icon class="fs-2" name="person-outline"></ion-icon>
+          <div class="username d-flex flex-column ps-2">
+            <span class="fw-bold">Franco</span>
+            <span>Dozza, Italia</span>
+          </div>
+        </div>
+        <div class="rater-box d-flex align-items-center gap-2">
+          <div class="rater">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <span>·</span>
+          <div class="date fw-bold">
+            <span>novembre 2023</span>
+          </div>
+        </div>
+        <div class="text-container">
+          <span
+            >Abbiamo avuto un ottimo soggiorno in questo bellissimo, spazioso e
+            pulito appartamento con splendido terrazzo vista lago di Bolsena in
+            una fantastica location con comodo...</span
+          >
+        </div>
+        <div class="py-3">
+          <button type="button" class="btn btn-light">Mostra altro</button>
+        </div>
+      </div>
+      <div class="col-lg-5 p-3">
+        <div class="user-img d-flex align-items-center gap-2 pb-3">
+          <ion-icon class="fs-2" name="person-outline"></ion-icon>
+          <div class="username d-flex flex-column ps-2">
+            <span class="fw-bold">Mauranne</span>
+            <span>Belgio</span>
+          </div>
+        </div>
+        <div class="rater-box d-flex align-items-center gap-2">
+          <div class="rater">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <span>·</span>
+          <div class="date fw-bold">
+            <span>ottobre 2023</span>
+          </div>
+        </div>
+        <div class="text-container">
+          <span
+            >Ho trascorso un soggiorno fantastico in questo bellissimo
+            appartamento con una posizione fantastica vicino al Lago di Bolsena.
+            Sono stata accolta calorosamente dalla figlia di Marta...</span
+          >
+        </div>
+        <div class="py-3">
+          <button type="button" class="btn btn-light">Mostra altro</button>
+        </div>
+      </div>
+      <div class="col-lg-5 p-3">
+        <div class="user-img d-flex align-items-center gap-2 pb-3">
+          <ion-icon class="fs-2" name="person-outline"></ion-icon>
+          <div class="username d-flex flex-column ps-2">
+            <span class="fw-bold">André</span>
+            <span>Berlino, Germania</span>
+          </div>
+        </div>
+        <div class="rater-box d-flex align-items-center gap-2">
+          <div class="rater">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <span>·</span>
+          <div class="date fw-bold">
+            <span>novembre 2023</span>
+          </div>
+        </div>
+        <div class="text-container">
+          <span
+            >Un luogo che diventa un'esperienza speciale - come l'intera area
+            intorno ad esso. Al momento del nostro soggiorno, all'inizio di
+            ottobre, anche il tempo migliore e quasi per niente...</span
+          >
+        </div>
+        <div class="py-3">
+          <button type="button" class="btn btn-light">Mostra altro</button>
+        </div>
+      </div>
+      <div class="col-lg-5 p-3">
+        <div class="user-img d-flex align-items-center gap-2 pb-3">
+          <ion-icon class="fs-2" name="person-outline"></ion-icon>
+          <div class="username d-flex flex-column ps-2">
+            <span class="fw-bold">Eva</span>
+            <span>Irlanda</span>
+          </div>
+        </div>
+        <div class="rater-box d-flex align-items-center gap-2">
+          <div class="rater">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <span>·</span>
+          <div class="date fw-bold">
+            <span>settembre 2023</span>
+          </div>
+        </div>
+        <div class="text-container">
+          <span
+            >Abbiamo adorato il nostro breve soggiorno con Marta a Marta. La sua
+            casa è un posto così bello e a pochi passi da buoni ristoranti,
+            dalla spiaggia sul Lago di Bolsena e da tutto il borgo...</span
+          >
+        </div>
+        <div class="py-3">
+          <button type="button" class="btn btn-light">Mostra altro</button>
+        </div>
+      </div>
+      <div class="col-lg-5 p-3">
+        <div class="user-img d-flex align-items-center gap-2 pb-3">
+          <ion-icon class="fs-2" name="person-outline"></ion-icon>
+          <div class="username d-flex flex-column ps-2">
+            <span class="fw-bold">Luciano</span>
+            <span>Bologna, Italia</span>
+          </div>
+        </div>
+        <div class="rater-box d-flex align-items-center gap-2">
+          <div class="rater">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <span>·</span>
+          <div class="date fw-bold">
+            <span>novembre 2023</span>
+          </div>
+        </div>
+        <div class="text-container">
+          <span
+            >Bellissimo appartamento con terrazzo vista lago di Bolsena per
+            rilassanti e gradevoli colazioni, pranzi o cene. Mini cucina
+            completa di tutto il necessario, splendida la...</span
+          >
+        </div>
+        <div class="py-3">
+          <button type="button" class="btn btn-light">Mostra altro</button>
+        </div>
+      </div>
+      <div class="col-lg-5 p-3">
+        <div class="user-img d-flex align-items-center gap-2 pb-3">
+          <ion-icon class="fs-2" name="person-outline"></ion-icon>
+          <div class="username d-flex flex-column ps-2">
+            <span class="fw-bold">Nicolas</span>
+            <span>Parigi, Francia</span>
+          </div>
+        </div>
+        <div class="rater-box d-flex align-items-center gap-2">
+          <div class="rater">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <span>·</span>
+          <div class="date fw-bold">
+            <span>novembre 2023</span>
+          </div>
+        </div>
+        <div class="text-container">
+          <span
+            >Non rimarrai deluso. Spiaggia di sabbia molto tranquilla nelle
+            vicinanze. Bei ristoranti, vista mozzafiato. Cos 'altro?</span
+          >
+        </div>
       </div>
     </div>
 
