@@ -7,24 +7,6 @@
   object-fit: cover;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.main-host {
-  width: 30%;
-}
 .host-img img {
   width: 50px;
   aspect-ratio: 1/1;
@@ -36,6 +18,43 @@
   border-bottom: 1px gray solid;
   padding-top: 10px;
 }
+
+.prenotation{
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.check-in{
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.border-b{
+  border-bottom: 1px solid lightgray;
+}
+
+.border-r{
+  border-right: 1px solid lightgray;
+}
+
+.btn-pre{
+  background-color: #ED3B5A;
+  border-radius: 10px;
+}
+
+.border-t{
+  border-top: 1px solid lightgray;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 990px){
   .main-row{
