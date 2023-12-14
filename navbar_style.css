@@ -2,7 +2,7 @@
   border-bottom: 1px solid lightgray;
 }
 
-#navbar img{
+#navbar img {
   margin-right: 25%;
 }
 
@@ -69,7 +69,7 @@
   outline: none;
   background-color: white;
   pointer-events: fill;
-  font-weight:600;
+  font-weight: 600;
 }
 
 #user-cont button:nth-of-type(2) {
@@ -78,18 +78,17 @@
   outline: none;
   background-color: white;
   pointer-events: fill;
-  font-weight:600;
+  font-weight: 600;
 }
-
 
 #drop-menu ion-icon {
   color: grey;
 }
 
 #drop-menu #user-btn {
-background-color: white;
-border: 1px solid lightgray;
-border-radius: 30px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 30px;
 }
 
 #user-cont button:nth-of-type(3) {
@@ -98,7 +97,7 @@ border-radius: 30px;
   outline: none;
   background-color: white;
   pointer-events: fill;
-  font-weight:600;
+  font-weight: 600;
 }
 
 #user-cont {
