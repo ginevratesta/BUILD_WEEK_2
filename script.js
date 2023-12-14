@@ -1219,7 +1219,6 @@ const destinazioni = [
 ];
 
 const containerCard = document.querySelector("#cards");
-let idAssociatedToCard = [];
 
 for (let i = 0; i < destinazioni.length; i++) {
   containerCard.innerHTML += `

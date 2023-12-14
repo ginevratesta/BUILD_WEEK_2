@@ -9,7 +9,7 @@
   transition: 0.5s ease;
 }
 #container-img img:hover {
-  stroke-opacity: 1;
+  opacity: 1;
 }
 
 .host-img img {
