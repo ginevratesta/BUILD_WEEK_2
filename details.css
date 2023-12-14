@@ -45,6 +45,7 @@
 .border-t {
   border-top: 1px solid lightgray;
 }
+
 .btn-servizi {
   margin-top: 30px;
   border-radius: 5px;
@@ -52,6 +53,12 @@
   padding-inline: 15px;
   padding-block: 10px;
 }
+
+.map-iframe{
+  margin-inline: 10%;
+  aspect-ratio: 2/1;
+}
+
 @media screen and (max-width: 990px) {
   .main-row {
     border-radius: 15px;
