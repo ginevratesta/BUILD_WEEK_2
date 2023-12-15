@@ -83,6 +83,10 @@
   object-fit: cover;
 }
 
+.card-body{
+  cursor: pointer;
+}
+
 .carousel-indicators [data-bs-target] {
   border-radius: 50%;
   width: 6px;
