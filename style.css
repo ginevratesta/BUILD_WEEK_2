@@ -79,7 +79,6 @@
 .img-card-dimension img {
   width: 279px;
   height: 265px;
-
   object-fit: cover;
 }
 
@@ -148,4 +147,18 @@ footer {
   #footer-end {
     font-size: 12px;
   }
+}
+
+@media screen and (max-width: 701px) {
+  .img-card-dimension {
+    width: 320px;
+    height: 265px;
+  }
+  
+  .img-card-dimension img {
+    width: 320px;
+    height: 265px;
+    object-fit: cover;
+  }
+  
 }

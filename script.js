@@ -1422,7 +1422,7 @@ function checkWindowWidth() {
     <span class="gray pb-3">Categorie</span>
     <span class="gray pb-3">Attività</span>
     </div>
-    <ion-icon style="font-size: 25px" name="chevron-forward-outline"></ion-icon>
+    <ion-icon style="min-width: 20px" name="chevron-forward-outline"></ion-icon>
     </div>`;
   } else {
     navFooter.innerHTML = `<div class="d-flex gap-4 ps-0 text-truncate">
