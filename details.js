@@ -1291,17 +1291,17 @@ for (let i = 0; i < destinazioni.length; i++) {
         <img id="pic-1" class="h-100 w-100" src="${destinazioni[i].picture_urls[0]}" alt="">
       </div>
       <div class="main-cols pe-0 col-lg-6 ">
-        <div class="row d-none d-lg-block d-lg-flex gy-3">
-          <div class="col-lg-6">
+        <div class="row h-100 d-none d-lg-block d-lg-flex gy-3">
+          <div class="col-lg-6 h-50">
             <img id="pic-2" class="h-100 w-100" src="${destinazioni[i].picture_urls[1]}" alt="">
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 h-50">
             <img id="pic-3" class="h-100 w-100" src="${destinazioni[i].picture_urls[2]}" alt="">
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 h-50">
             <img id="pic-4" class="h-100 w-100" src="${destinazioni[i].picture_urls[3]}" alt="">
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 h-50">
             <img id="pic-5" class="h-100 w-100" src="${destinazioni[i].picture_urls[4]}" alt="">
           </div>
         </div>
@@ -1311,7 +1311,9 @@ for (let i = 0; i < destinazioni.length; i++) {
     mainHost.innerHTML = `<div class="contenitore-host d-flex align-items-center justify-content-between" id="host">
               <div>
                 <h4>${destinazioni[i].property_type} - Host: ${destinazioni[i].host_name}</h4>
-                <p>${destinazioni[i].bedrooms + destinazioni[i].beds} ospiti . ${destinazioni[i].bedrooms} camera/e da letto . ${destinazioni[i].beds} letto/i .  ${destinazioni[i].bathrooms} bagno/i</p>
+                <div class="d-flex justify-content-around">
+                <span>${destinazioni[i].bedrooms + destinazioni[i].beds} ospiti </span> <span>-</span> <span>${destinazioni[i].bedrooms} camera/e da letto</span> <span>-</span> <span>${destinazioni[i].beds} letto/i</span> <span>-</span> <span>${destinazioni[i].bathrooms} bagno/i</span> 
+                </div>
               </div>
               <div class="host-img">
                 <img src="https://a0.muscache.com/im/pictures/user/d45b1f48-4507-4e66-afe7-20396cd82533.jpg?im_w=240" alt="" />

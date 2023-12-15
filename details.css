@@ -4,9 +4,8 @@
 }
 
 #container-img img {
-  object-fit: cover;
-  height: 100%;
   transition: 0.5s ease;
+  object-fit: cover;
 }
 #container-img img:hover {
   opacity: 0.7;
