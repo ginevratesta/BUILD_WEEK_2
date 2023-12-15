@@ -130,6 +130,10 @@ border-radius: 30px;
   margin-top: 15%;
 }
 
+.btn:hover{
+  color: #ff385c;
+}
+
 .card{
   border: none;
 }
