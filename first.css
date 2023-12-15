@@ -130,6 +130,11 @@ border-radius: 30px;
   margin-top: 15%;
 }
 
+.card{
+  border: none;
+}
+
 .card img{
   object-fit: cover;
+  border-radius: 10px;
 }

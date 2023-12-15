@@ -86,6 +86,11 @@
   color: grey;
 }
 
+.dropdown-menu[data-bs-popper] {
+  left: auto;
+  right: 0;
+}
+
 #drop-menu #user-btn {
 background-color: white;
 border: 1px solid lightgray;
